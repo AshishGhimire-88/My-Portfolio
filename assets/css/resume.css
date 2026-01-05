@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    line-height: 1.4;
+}
+
+/* Navigation Styles */
+.navbar {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 1rem 0;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.nav-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+}
+
+.nav-menu a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Resume Container */
+.resume-container {
+    max-width: 900px;
+    margin: 100px auto 20px;
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 0;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    border-bottom: 3px solid #333;
+}
+
+.name-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+.name-section h2 {
+    font-size: 1.1rem;
+    color: #666;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.photo-section img {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+/* Contact Info */
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.contact-item {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Main Content */
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 0;
+}
+
+.left-column {
+    padding: 30px 40px;
+    background: #f8f9fa;
+    border-right: 1px solid #ddd;
+}
+
+.right-column {
+    padding: 30px 40px;
+    background: white;
+}
+
+/* Section Styles */
+.section {
+    margin-bottom: 30px;
+}
+
+.section h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+.section p {
+    font-size: 0.95rem;
+    color: #555;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/* Education Styles */
+.education-item {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.education-item .year {
+    font-weight: bold;
+    color: #333;
+    min-width: 80px;
+    font-size: 0.9rem;
+}
+
+.education-item .details {
+    flex: 1;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.education-item .details strong {
+    color: #333;
+}
+
+/* Skills Styles */
+.skill-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.skill-name {
+    font-size: 0.9rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.skill-dots {
+    display: flex;
+    gap: 4px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid #333;
+    background: white;
+}
+
+.dot.filled {
+    background: #333;
+}
+
+/* Language Styles */
+.language-item {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Work Experience Styles */
+.work-item {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.work-item:last-child {
+    border-bottom: none;
+}
+
+.work-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.work-header strong {
+    font-size: 1rem;
+    color: #333;
+}
+
+.work-header .year {
+    font-size: 0.85rem;
+    color: #666;
+    font-weight: bold;
+}
+
+.company {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.work-item ul {
+    margin-left: 20px;
+}
+
+.work-item li {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+
+/* References Styles */
+.reference-item {
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #555;
+}
+
+.reference-item strong {
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+    
+    .nav-menu {
+        gap: 1rem;
+    }
+    
+    .resume-container {
+        margin: 120px 10px 20px;
+        max-width: none;
+    }
+    
+    .header {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .name-section h1 {
+        font-size: 2rem;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        gap: 5px;
+        padding: 15px 20px;
+    }
+    
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .left-column,
+    .right-column {
+        padding: 20px;
+    }
+    
+    .education-item {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .work-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .name-section h1 {
+        font-size: 1.5rem;
+    }
+    
+    .photo-section img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .skill-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+}
