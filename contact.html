@@ -3,190 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Contact</title>
+    <title>Contact - Portfolio</title>
+
     <link rel="stylesheet" href="assets/css/contact.css">
-
 </head>
+
 <body>
-    <header>
-        <nav>
-            <a href="#" class="logo">Portfolio</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="resume.html">My Resume</a></li>
-                <li><a href="My_Projects.html">Projects</a></li>
-                <li><a href="contact.html" class="active">Contact Info</a></li>
-            </ul>
-            <div class="mobile-menu">
-                <span></span>
-                <span></span>
-                <span></span>
+
+<header class="navbar">
+    <div class="nav-container">
+        <div class="nav-brand">Portfolio</div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="My_Projects.html">Projects</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</header>
+
+<main>
+
+    <section class="page-title">
+        <h1>Get In Touch</h1>
+        <p>Send me a message — I’ll get back to you soon.</p>
+    </section>
+
+    <section class="contact-container">
+
+        <!-- INFO -->
+        <div class="contact-info">
+            <div class="info-card">
+                <h3>Email</h3>
+                <p>aghimire915@gmail.com</p>
             </div>
-        </nav>
-    </header>
 
-    <main>
-        <section class="page-title">
-            <h1>Get In Touch</h1>
-            <p>Let's connect and discuss opportunities, collaborations, or just say hello!</p>
-        </section>
-
-        <section class="contact-section">
-            <div class="contact-container">
-                <div class="contact-info">
-                    <div class="info-card">
-                        <div class="info-icon">📧</div>
-                        <h3>Email Me</h3>
-                        <p>aghimire915@gmail.com</p>
-                    </div>
-                    <div class="info-card">
-                        <div class="info-icon">📍</div>
-                        <h3>Location</h3>
-                        <p>Arlington, TX</p>
-                    </div>
-                    <div class="info-card">
-                        <div class="info-icon">💼</div>
-                        <h3>Open For</h3>
-                        <p>Internships<br>Collaborations<br>Group Projects</p>
-                    </div>
-                </div>
-
-                <div class="contact-form-container">
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Your Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="6" required></textarea>
-                        </div>
-                        <div class="alert alert-success d-none" id="submitSuccessMessage" role="alert">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Mail submission successful!</div>
-                                </div>
-                            </div>
-                            
-                            <!-- Error Message -->
-                            <div class="alert alert-danger d-none" id="submitErrorMessage" role="alert">
-                                <div class="text-center text-danger mb-3">Error sending message!</div>
-                            </div>
-                        
-                        <button type="submit" class="submit-btn">
-                            <span class="btn-text">Send Message</span>
-                            <span class="btn-icon">✈️</span>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <!-- Success Message -->
-        <div id="successMessage" class="success-message">
-            <div class="success-content">
-                <div class="success-icon">✅</div>
-                <h3>Message Sent Successfully!</h3>
-                <p>Thank you for reaching out. I'll get back to you soon.</p>
+            <div class="info-card">
+                <h3>Location</h3>
+                <p>Arlington, TX</p>
             </div>
         </div>
-    </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Connect With Me</h3>
-                <div class="social-links">
-                    <a href="https://www.instagram.com/aghimire915/" target="_blank" class="social-link instagram">
-                        <span class="social-text">Instagram</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/ashish-ghimire-9252b2310/" target="_blank" class="social-link linkedin">
-                        <span class="social-text">LinkedIn</span>
-                    </a>
-                    <a href="https://github.com/AshishGhimire-88" target="_blank" class="social-link github">
-                        <span class="social-text">GitHub</span>
-                    </a>
-                    <a href="https://www.kaggle.com/ashishghimire101" target="_blank" class="social-link kaggle">
-                        <span class="social-text">Kaggle</span>
-                    </a>
-                </div>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <div class="footer-links">
-                    <a href="index.html">Home</a>
-                    <a href="resume.html">Resume</a>
-                    <a href="My_Projects.html">Projects</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Portfolio</h3>
-                <p>Data Science enthusiast passionate about turning data into actionable insights.</p>
-                <div class="footer-contact">
-                    <p>📧 aghimire915@gmail.com</p>
-                    <p>📍 Kathmandu, Nepal</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2024 Portfolio. All rights reserved.</p>
-        </div>
-    </footer>
+        <!-- FORM -->
+        <form id="contactForm"
+              class="contact-form"
+              action="https://docs.google.com/forms/d/e/YOUR_FORM_ID/formResponse"
+              method="POST"
+              target="hidden_iframe">
 
-        <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-        </script>
-        <script src="assets/js/config.js"></script>
-        <script type="text/javascript">
-        
-            (function(){
-                emailjs.init({
-                    publicKey: window.ENV.MY_PUBLIC_KEY,
-                });
-            })();
-          
-            // Form submission
-            document.getElementById("contactForm").addEventListener("submit", function(event) {
-              event.preventDefault(); // Prevent default form submission
-          
-              // Get form data
-              const formData = {
-                name: document.getElementById("name").value,
-                email: document.getElementById("email").value,
-                subject: document.getElementById("subject").value,
-                message: document.getElementById("message").value
-              };
+            <input type="text" name="entry.1111111111" placeholder="Your Name" required>
+            <input type="email" name="entry.2222222222" placeholder="Your Email" required>
+            <input type="text" name="entry.3333333333" placeholder="Subject" required>
+            <textarea name="entry.4444444444" placeholder="Message" rows="6" required></textarea>
 
-              console.log("Check", formData);
-          
-              // Send the email using EmailJS
-              emailjs.send(window.ENV.MY_SERVICE_KEY, window.ENV.MY_TEMPLATE_KEY, formData)
-                .then(function(response) {
-                  console.log("Success:", response);
-                  document.getElementById("submitSuccessMessage").classList.remove("d-none");
-                  document.getElementById("submitErrorMessage").classList.add("d-none");
-                  document.getElementById("contactForm").reset();
-                  
-                }, function(error) {
-                  console.log("Error:", error);
-                  document.getElementById("submitErrorMessage").classList.remove("d-none");
-                  document.getElementById("submitSuccessMessage").classList.add("d-none");
-                });
-            });
-        </script>
+            <button type="submit">Send Message ✈️</button>
+
+        </form>
+
+        <iframe name="hidden_iframe" style="display:none;"></iframe>
+
+    </section>
+
+</main>
+
+<!-- SUCCESS POPUP -->
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <h2>Message Sent ✅</h2>
+        <p>Thanks for reaching out. I’ll respond soon.</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+</div>
+
+<script src="assets/js/contact.js"></script>
+
 </body>
 </html>

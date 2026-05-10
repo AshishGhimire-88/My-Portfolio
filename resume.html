@@ -1,221 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashish Ghimire - Resume</title>
-    <link rel="stylesheet" href="assets/css/resume.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ashish Ghimire | Resume</title>
+
+    <link rel="stylesheet" href="assets/css/resume.css" />
+
+    <!-- Optional Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Navigation Bar -->
+
+    <!-- =========================
+         NAVIGATION BAR
+    ========================== -->
+
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-brand">Portfolio</div>
+
+            <div class="nav-brand">
+                Portfolio
+            </div>
+
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="resume.html">My Resume</a></li>
+                <li><a href="resume.html" class="active">Resume</a></li>
                 <li><a href="My_Projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact Info</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
+
         </div>
     </nav>
 
-    <!-- Resume Content -->
-    <div class="resume-container">
-        <!-- Header Section -->
-        <div class="header">
-            <div class="name-section">
-                <h1>Ashish Ghimire</h1>
-                <h2>ASPIRING DATA SCIENTIST</h2>
+    <!-- =========================
+         RESUME SECTION
+    ========================== -->
+
+    <section class="resume-section">
+
+        <div class="resume-container">
+
+            <!-- Resume Header -->
+
+            <div class="resume-header">
+
+                <h1>My Resume</h1>
+
+                <p>
+                    View or download my latest resume below.
+                </p>
+
+                <div class="resume-buttons">
+
+                    <a href="assets/resume/Ashish_Ghimire_Resume.pdf"
+                       class="download-btn"
+                       download>
+                        Download Resume
+                    </a>
+
+                    <a href="assets/resume/Ashish_Ghimire_Resume.pdf"
+                       class="view-btn"
+                       target="_blank">
+                        Open in New Tab
+                    </a>
+
+                </div>
+
             </div>
-            <div class="photo-section">
-                <img src="assets/images/my_photo.jpg" alt="Profile Photo">
+
+            <!-- Embedded PDF -->
+
+            <div class="pdf-wrapper">
+
+                <iframe
+                    src="assets/resume/Ashish_Ghimire_Resume.pdf">
+                </iframe>
+
             </div>
+
         </div>
 
-        <!-- Contact Info -->
-        <div class="contact-info">
-            <div class="contact-item">📍Arlington, TX</div>
-            <div class="contact-item">📧 aghimire915@gmail.com</div>
-            <div class="contact-item">🌐 <a href="https://www.linkedin.com/in/ashish-ghimire-9252b2310/">LinkedIn</a></div>
-        </div>
+    </section>
 
-        <!-- Main Content -->
-        <div class="main-content">
-            <!-- Left Column -->
-            <div class="left-column">
-                <!-- Profile Info -->
-                <div class="section">
-                    <h3>PROFILE INFO</h3>
-                    <p>Motivated and self-driven Data Science enthusiast with a solid foundation in Python, R, statistics, and data visualization. Skilled in data cleaning, exploratory data analysis, and feature engineering using tools like pandas, NumPy, seaborn, and scikit-learn. Proficient in visual storytelling through ggplot2, matplotlib, and Seaborn. Hands-on experience with real-world datasets, including projects on world happiness analysis, used car price prediction, and music recommendation system. Strong grasp of probability, regression, and correlation analysis. Currently expanding knowledge in machine learning, model evaluation, and advanced algorithms such as XGBoost and LightGBM. Passionate about applying data science to solve meaningful problems and committed to continuous learning and impactful contributions.</p>
-                </div>
-
-                <!-- Education -->
-                <div class="section">
-                    <h3>EDUCATION</h3>
-                    <div class="education-item">
-                        <div class="year">2025 - present</div>
-                        <div class="details">
-                            <strong>University of Texas at Arlington</strong><br>
-                            Bachelor of Science<br>
-                            • Data Science<br>
-                            • Freshmen<br>
-                            • CGPA: 4
-                        </div>
-                    </div>
-                    <div class="education-item">
-                        <div class="year">2022-2024</div>
-                        <div class="details">
-                            <strong>Trinity International Secondary School</strong><br>
-                            Higher Secondary Certificate<br>
-                            • Science Stream<br>
-                            • GPA: 3.87 (on scale 4, Unweighted)
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Skills -->
-                <div class="section">
-                    <h3>SKILLS</h3>
-                    <div class="skill-item">
-                        <span class="skill-name">Python</span>
-                        <div class="skill-dots">
-                            <span class="dot filled"></span>
-                            <span class="dot filled"></span>
-                            <span class="dot filled"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Machine Learning</span>
-                        <div class="skill-dots">
-                            <span class="dot filled"></span>
-                            <span class="dot filled"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Data Analysis</span>
-                        <div class="skill-dots">
-                            <span class="dot filled"></span>
-                            <span class="dot filled"></span>
-                            <span class="dot filled"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">SQL</span>
-                        <div class="skill-dots">
-                            <span class="dot filled"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Tableau</span>
-                        <div class="skill-dots">
-                            <span class="dot filled"></span>
-                            <span class="dot filled"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Deep Learning</span>
-                        <div class="skill-dots">
-                            <span class="dot filled"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Statistics</span>
-                        <div class="skill-dots">
-                            <span class="dot filled"></span>
-                            <span class="dot filled"></span>
-                            <span class="dot filled"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Languages -->
-                <div class="section">
-                    <h3>LANGUAGES</h3>
-                    <div class="language-item">
-                        <span>English - Fluent</span>
-                    </div>
-                    <div class="language-item">
-                        <span>Nepali - Native</span>
-                    </div>
-                    <div class="language-item">
-                        <span>Hindi - Conversational</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Right Column -->
-            <div class="right-column">
-                <!-- Work Experience -->
-
-
-                <div class="section">
-                    <h3>PROJECTS</h3>
-
-                    <div class="work-item">
-                        <div class="work-header">
-                            <strong>Olist E-commerce Analytics</strong>
-                            <span class="year">2025-2026</span>
-                        </div>
-                        <div class="company">Data Analysis & Visualization Project</div>
-                        <ul>
-                            <li>Analyzed Brazilian e-commerce dataset from Kaggle containing 100,000+ orders across multiple dimensions including customers, products, payments, and reviews</li>
-                            <li>Engineered three analytical tables using Python and Pandas: customer-level aggregations for segmentation, order-level metrics for pipeline tracking, and retention-level data for cohort analysis</li>
-                            <li>Built two interactive Tableau dashboards: "Customer Value and Loyalty Dashboard" visualizing customer segmentation, lifetime value, and purchase patterns, and "Order Pipeline Dashboard" tracking order flow, delivery performance, and payment trends</li>
-                            <li>Identified key business insights including customer retention patterns, high-value segments, and delivery bottlenecks to inform strategic decision-making</li>
-                        </ul>
-                    </div>
-
-                    <div class="work-item">
-                        <div class="work-header">
-                            <strong>World Happiness Index – Dashboard</strong>
-                            <span class="year">2025</span>
-                        </div>
-                        <div class="company">Interactive Data Visualization Project</div>
-                        <ul>
-                            <li>Cleaned and preprocessed multi-year World Happiness Report dataset spanning 2005-2023, handling missing values and standardizing country codes for 150+ nations</li>
-                            <li>Conducted exploratory data analysis to identify correlations between happiness scores and socio-economic factors including GDP, life expectancy, social support, and freedom indices</li>
-                            <li>Developed a full-stack interactive web dashboard using Python (Dash, Plotly) featuring choropleth world maps, time series trend analysis, country comparisons, and correlation scatter plots with dynamic filtering capabilities</li>
-                            <li>Deployed dashboard on Render with real-time KPI tracking showing global happiness averages, year-over-year changes, and regional rankings to enable data-driven insights into global well-being trends</li>
-                        </ul>
-                    </div>
-
-                    <div class="work-item">
-                        <div class="work-header">
-                            <strong>Used Car Price Prediction – Machine Learning Project</strong>
-                            <span class="year">2025</span>
-                        </div>
-                        <div class="company">Key points</div>
-                        <ul>
-                            <li>Explored and visualized the 'Used Car Price Prediction' dataset through both statistical and graphical EDA</li>
-                            <li>Created informative plots such as time series charts, scatter plots, bar plots, and correlation heatmaps to understand price-driving factors</li>
-                            <li>Built and trained a Random Forest Regressor to predict used car prices based on features like year, mileage, fuel type, and transmission</li>
-                            <li>Analyzed feature importance and visualized the top contributing factors using a bar chart to interpret the model's decision-making process</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </body>
 </html>
